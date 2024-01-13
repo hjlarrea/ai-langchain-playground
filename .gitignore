@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 ollama/
 .venv/
+docs/
+.DS_Store
+weaviate/
