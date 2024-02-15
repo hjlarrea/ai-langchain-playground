@@ -5,3 +5,4 @@ jupyter
 pydantic==1.10.8 # due to an issue with Pydantic (https://github.com/langchain-ai/langchain/issues/14585)
 docx2txt
 weaviate-client
+html2text

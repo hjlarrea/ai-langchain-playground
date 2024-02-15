@@ -55,3 +55,9 @@ Notes
   - Indeed running Ollama locally did fix the issue, used the GPU and run a lot faster. With `llama2:7b` it went from 11 minutes to 30 seconds. Regarding `llama2:70b`, effectively using it produced a better result to the similarity search. But the `OllamaEmbeddings()` call took 1.5 hours to complete and used CPU instead of GPU, I guess it is because of my equipment capabilities.
   - With `llama2:13b` the `OllamaEmbeddings()` call completed in 2 minutes. 
   - Best result I got is combining The text splitter in chunk sizes of 300, 0 overlap and using the model `llama2:13b` for encodding.
+
+  **langchain-weaviate-RAG.ipynb**
+
+  Try to implement [Weaviate: Retrieval-Augmented Generation](https://python.langchain.com/docs/integrations/vectorstores/weaviate#retrieval-augmented-generation)
+
+  Will use the same parameters that yielded best results for the previous case: text splitter in chunk sizes of 300, 0 overlap and using the model `llama2:13b` for encodding.
